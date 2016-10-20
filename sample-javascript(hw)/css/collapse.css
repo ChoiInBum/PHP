@@ -1,0 +1,45 @@
+/*.item img {
+  width: 100%;
+}
+
+.well {
+  margin-top: 10px;
+}
+
+section.container:nth-child(2) {
+  margin-top: 30px;
+}
+
+tab-content {
+  border-left: 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
+  border-right: 1px solid #DDDDDD;
+  padding: 20px;
+
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+div.circle {
+  border: 5px solid #DDDDDD;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  padding: 20px;
+}
+
+.circle {
+  padding: 40px;
+}
+
+#myTab i {
+  display: none;
+}*/
+
+body {
+  padding-top: 70px;
+}
+
+img {
+  width: 100%;
+}
