@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap - Navbar</title>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+  </head>
+  <style>
+    h2 {
+      padding-top: 20px;
+      padding-left: 40px;
+    }
+    h3 {
+      padding-left: 40px;
+    }
+  </style>
+  <body>
+    <section class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <ul class="nav nav-pills nav-stacked">
+            <li role="presentation"><a href="./homepage.html"></i>
+              홈페이지로</a></li>
+            <li class="divider"></li>
+            <li role="presentation">
+            　프로그램(드라마) 소개
+            </li>
+            <li class="divider"></li>
+            <li role="presentation"><a href="./sample-component(hw)/people.html"></i>
+              등장인물</a></li>
+            <li role="presentation"><a href="./sample-component(hw)/character.html"></i>
+              캐릭터 소개</a></li>
+            <li role="presentation"><a href="./sample-component(hw)/shooting_place.html"></i>
+              촬영 장소</a></li>
+            <li role="presentation" class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                사진첩 <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <a href="./sample-javascript(hw)/site.html">
+                  현장포토
+                </a>
+                <br>
+                <a href="./sample-javascript(hw)/specimage.html">
+                  대표이미지
+                </a>
+                <br>
+                <a href="./sample-javascript(hw)/pictorial.html">
+                  화보
+                </a>                     　
+              </ul>
+            </li>
+            <li role="presentation" class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                명장면＆명대사 및 동영상 <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <a href="./sample-javascript(hw)/famous.html">
+                  명장면＆명대사
+                </a>
+                <br>
+                <a href="./sample-javascript(hw)/video.html">
+                  동영상
+                </a>                                  　
+              </ul>
+            </li>
+
+            <li role="presentation"><a href="./sample-javascript(hw)/bulletinboard.html"></i>
+              시청자 소감(게시판)</a></li>
+
+          </ul>
+        </div>
+        <div class="col-sm-9">
+          <div class="dropdown">
+            <h2>환영합니다! </h2>
+            <h3>Bootstrap의 세계에 오신걸 환영합니다. </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./lib/jquery-3.1.1.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

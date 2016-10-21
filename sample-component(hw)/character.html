@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap - Dropdown</title>
+    <title>Bootstrap - Button Group</title>
     <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/dropdown.css">
+    <link rel="stylesheet" href="./css/navbar.css">
   </head>
   <body>
     <section class="container">
@@ -22,9 +22,9 @@
             <li class="divider"></li>
             <li role="presentation"><a href="./people.html"></i>
               등장인물</a></li>
-            <li role="presentation"><a href="./character.html"></i>
+            <li role="presentation" class="active"><a href="./character.html"></i>
               캐릭터 소개</a></li>
-            <li role="presentation" class="active"><a href="./shooting_place.html"></i>
+            <li role="presentation"><a href="./shooting_place.html"></i>
               촬영 장소</a></li>
             <li role="presentation" class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
@@ -50,51 +50,56 @@
                 명장면＆명대사 및 동영상<span class="caret"></span>
               </a>
               <ul class="dropdown-menu" role="menu">
-                <a href="./famous.html">
+                <a href="../sample-javascript(hw)/famous.html">
                   명장면＆명대사
                 </a>
                 <br>
-                <a href="./video.html">
+                <a href="../sample-javascript(hw)/video.html">
                   동영상
                 </a>                         　
               </ul>
             </li>
 
-            <li role="presentation"><a href="./homepage.html"></i>
+            <li role="presentation"><a href="../sample-javascript(hw)/bulletinboard.html"></i>
               시청자 소감(게시판)</a></li>
-
           </ul>
         </div>
+
         <div class="col-sm-9">
-          <div class="dropdown">
-            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-              Dropdown
-              <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-              <li role="presentation" class="dropdown-header">드랍다운 헤더</li>
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-              <li role="presentation" class="divider"></li>
-              <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
-            </ul>
+          <div class="btn-group btn-group-justified" role="group" aria-label="...">
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-primary">Left</button>
+            </div>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-warning">Middle</button>
+            </div>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-success">Right</button>
+            </div>
           </div>
-          <div class="dropup">
-            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">
-              Dropup
-              <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
-            </ul>
+          <button type="button" class="btn btn-info btn-block">Success</button>
+
+          <div class="btn-group-vertical" role="group" aria-label="..." style="margin-top: 50px;">
+            <button type="button" class="btn btn-default">1</button>
+            <button type="button" class="btn btn-default">2</button>
+
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                Dropdown
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuDivider">
+                <li role="presentation" class="dropdown-header">Welcome!</li>
+                <li><a href="#">Dropdown link1</a></li>
+                <li role="presentation" class="divider"></li>
+                <li><a href="#">Dropdown link2</a></li>
+                <li><a href="#">Dropdown link3</a></li>
+                <li><a href="#">Dropdown link4</a></li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
     <script src="./lib/jquery-3.1.1.min.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
